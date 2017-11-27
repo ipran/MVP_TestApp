@@ -14,6 +14,11 @@
 		3DD2CBCD1FC8213E0080404E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DD2CBCB1FC8213E0080404E /* LaunchScreen.storyboard */; };
 		3DD2CBD81FC8213E0080404E /* MVP_TestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD2CBD71FC8213E0080404E /* MVP_TestAppTests.swift */; };
 		3DD2CBE31FC8213E0080404E /* MVP_TestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD2CBE21FC8213E0080404E /* MVP_TestAppUITests.swift */; };
+		3DD2CBF41FC834B80080404E /* ItemPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD2CBF31FC834B80080404E /* ItemPresenter.swift */; };
+		3DD2CBF61FC835C40080404E /* ItemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD2CBF51FC835C40080404E /* ItemService.swift */; };
+		3DD2CBF81FC837030080404E /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD2CBF71FC837030080404E /* ItemModel.swift */; };
+		3DD2CBFC1FC83D3A0080404E /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD2CBFB1FC83D3A0080404E /* ItemViewModel.swift */; };
+		3DD2CBFE1FC83DD00080404E /* ItemViewDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD2CBFD1FC83DD00080404E /* ItemViewDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		3DD2CBDE1FC8213E0080404E /* MVP_TestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVP_TestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DD2CBE21FC8213E0080404E /* MVP_TestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVP_TestAppUITests.swift; sourceTree = "<group>"; };
 		3DD2CBE41FC8213E0080404E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DD2CBF31FC834B80080404E /* ItemPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPresenter.swift; sourceTree = "<group>"; };
+		3DD2CBF51FC835C40080404E /* ItemService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemService.swift; sourceTree = "<group>"; };
+		3DD2CBF71FC837030080404E /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		3DD2CBFB1FC83D3A0080404E /* ItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
+		3DD2CBFD1FC83DD00080404E /* ItemViewDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +107,10 @@
 		3DD2CBC11FC8213E0080404E /* MVP_TestApp */ = {
 			isa = PBXGroup;
 			children = (
+				3DD2CBF21FC8283F0080404E /* Presenter */,
+				3DD2CBF11FC828360080404E /* View */,
+				3DD2CBF01FC828190080404E /* Model */,
 				3DD2CBC21FC8213E0080404E /* AppDelegate.swift */,
-				3DD2CBC41FC8213E0080404E /* ViewController.swift */,
 				3DD2CBC61FC8213E0080404E /* Main.storyboard */,
 				3DD2CBC91FC8213E0080404E /* Assets.xcassets */,
 				3DD2CBCB1FC8213E0080404E /* LaunchScreen.storyboard */,
@@ -123,6 +135,33 @@
 				3DD2CBE41FC8213E0080404E /* Info.plist */,
 			);
 			path = MVP_TestAppUITests;
+			sourceTree = "<group>";
+		};
+		3DD2CBF01FC828190080404E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3DD2CBF51FC835C40080404E /* ItemService.swift */,
+				3DD2CBF71FC837030080404E /* ItemModel.swift */,
+				3DD2CBFB1FC83D3A0080404E /* ItemViewModel.swift */,
+				3DD2CBFD1FC83DD00080404E /* ItemViewDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3DD2CBF11FC828360080404E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3DD2CBC41FC8213E0080404E /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3DD2CBF21FC8283F0080404E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3DD2CBF31FC834B80080404E /* ItemPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +298,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DD2CBF81FC837030080404E /* ItemModel.swift in Sources */,
+				3DD2CBF61FC835C40080404E /* ItemService.swift in Sources */,
 				3DD2CBC51FC8213E0080404E /* ViewController.swift in Sources */,
+				3DD2CBF41FC834B80080404E /* ItemPresenter.swift in Sources */,
 				3DD2CBC31FC8213E0080404E /* AppDelegate.swift in Sources */,
+				3DD2CBFE1FC83DD00080404E /* ItemViewDataModel.swift in Sources */,
+				3DD2CBFC1FC83D3A0080404E /* ItemViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
